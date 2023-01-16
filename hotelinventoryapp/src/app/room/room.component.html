@@ -1,0 +1,17 @@
+<!-- Interpolation -->
+<!-- We can use Interpolation for basic Datatypes or even object -->
+<p> Welcome, to <b>{{hotelName}}, {{hotelAddress}}</b> <br />{{hotelPostalCode}}</p>
+
+
+<!-- Property Binding -->
+<!-- It is to be used with any valid property of any valid HTML tag, using box syntax [] -->
+<div [hidden] = "hideAvailableRooms">
+    Rooms available:
+    <div [innerText]="totalRoomsInHotel"></div>
+</div>
+
+<!-- Event Binding -->
+<!-- To interact with end user like to save, submit, toggle, etc -->
+<button (click)="toggleHotelName()">I am a Button</button>
+
+
