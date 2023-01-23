@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Room, RoomList } from './room';
 
 @Component({
   selector: 'hinv-room',
@@ -22,4 +23,42 @@ export class RoomComponent implements OnInit {
   toggleHotelName(): void {
     this.hideAvailableRooms = !this.hideAvailableRooms;
   }
+
+  // Directives
+  rooms: Room = {
+    totalRooms: 20,
+    availableRooms: 9,
+    bookedRooms: 5
+  };
+
+  roomsList: RoomList[] = [
+    {
+      roomNumber: 1,
+      roomType: 'Deluxe Room',
+      ameneties: 'Air Conditioner, Attached Bath, Balcony, Free Wifi, Food',
+      price: 1000,
+      photo: 'https://i.ebayimg.com/images/g/pacAAOSwMxlivIOt/s-l500.jpg',
+      checkInTime: new Date('11-Nov-2022'),
+      checkOutTime: new Date('13-Nov-2022')
+    },
+    {
+      roomNumber: 2,
+      roomType: 'Classic Room',
+      ameneties: 'Air Conditioner, Attached Bath, Free Wifi',
+      price: 600,
+      photo: 'https://i.ebayimg.com/images/g/pacAAOSwMxlivIOt/s-l500.jpg',
+      checkInTime: new Date('11-Nov-2022'),
+      checkOutTime: new Date('13-Nov-2022')
+    },
+    {
+      roomNumber: 3,
+      roomType: 'Deluxe Royal Room',
+      ameneties: 'Air Conditioner, Attached Bath, Balcony, Free Wifi, Food, Anything you order!',
+      price: 1400,
+      photo: 'https://i.ebayimg.com/images/g/pacAAOSwMxlivIOt/s-l500.jpg',
+      checkInTime: new Date('15-Jan-2022'),
+      checkOutTime: new Date('20-Jan-2022')
+    }
+  ];
+
 }

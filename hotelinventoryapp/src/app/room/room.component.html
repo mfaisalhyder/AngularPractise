@@ -1,17 +1,62 @@
 <!-- Interpolation -->
-<!-- We can use Interpolation for basic Datatypes or even object -->
+<!--  W e can use Interpolation for basic Datatypes or even object -->
 <p> Welcome, to <b>{{hotelName}}, {{hotelAddress}}</b> <br />{{hotelPostalCode}}</p>
 
 
 <!-- Property Binding -->
 <!-- It is to be used with any valid property of any valid HTML tag, using box syntax [] -->
-<div [hidden] = "hideAvailableRooms">
+<div [ngStyle]="{'color' : rooms.availableRooms && rooms.availableRooms > 10 ? 'green' : 'red'}" [hidden]="hideAvailableRooms">
     Rooms available:
     <div [innerText]="totalRoomsInHotel"></div>
 </div>
 
+
 <!-- Event Binding -->
 <!-- To interact with end user like to save, submit, toggle, etc -->
-<button (click)="toggleHotelName()">I am a Button</button>
+<button (click)="toggleHotelName()">Hide Available Rooms!</button>
 
 
+<!-- Null Collision -->
+<!-- {{ rooms?.availableRooms ?? 'Sorry All Rooms are booked!'}} -->
+
+<!-- Optional Chaining -->
+<!--
+    <div *ngIf="rooms?.availableRooms">
+      Rooms List - using null Collision
+    </div>
+-->
+<br />
+<br />
+<br />
+{{rooms.availableRooms ?? 'No Rooms'}}
+<!-- Directives -->
+<!-- ngIf -->
+<div *ngIf="rooms.availableRooms && rooms.availableRooms > 0">
+    Room - using ngIf
+</div>
+
+<br /> <br />
+<div>
+    Rooms List
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Room Number</th>
+            <th>Room Type</th>
+            <th>Room Price</th>
+            <th>Room Ameneties</th>
+            <th>CheckIn Time</th>
+            <th>CheckOut Time</th>
+        </tr>
+        <tr [ngClass]="e ? 'even' : 'odd'"  *ngFor="let roomObj of roomsList; let e=even; ; let o=odd, let i=index">
+            <td>{{i}}</td>
+            <td>{{e ? 'Even' : 'Odd'}}</td>
+            <td>{{roomObj.roomNumber}}</td>
+            <td>{{roomObj.roomType}}</td>
+            <td>{{roomObj.price}}</td>
+            <td>{{roomObj.ameneties}}</td>
+            <td>{{roomObj.checkInTime}}</td>
+            <td>{{roomObj.checkOutTime}}</td>
+        </tr>
+    </table>
+</div>

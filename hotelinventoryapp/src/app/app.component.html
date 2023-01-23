@@ -1,2 +1,12 @@
 <h1>My Angular 15 Project</h1>
-<hinv-room></hinv-room>
+
+<!-- Directives -->
+<!-- ngSwitch -->
+<div [ngSwitch]="role">
+    <div *ngSwitchCase="'User'"> Welcome User!</div>
+    <div *ngSwitchCase="'Admin'">
+        <hinv-room></hinv-room>
+    </div>
+    <div *ngSwitchDefault> You are not authorized to view this page!</div>
+
+</div>
