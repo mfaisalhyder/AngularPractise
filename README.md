@@ -4,12 +4,19 @@
 ## Install node:
 ------------
 https://nodejs.org/en/download/
+
 Go for LTS (Long Term Support)
+
 Select Windows Binary (.zip)
+
 UnZip in any directory, then set this directory in PATH of Environment Variables.
+
 e.g; D:\Development\node-v18.13.0-win-x64
+
 Now check; node -v from terminal, you should see version.
+
 Make sure prefix is correct here; 
+
 C:\Users\<name>\.npmrc
 
 ## Install Typescript:
