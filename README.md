@@ -12,6 +12,9 @@
 - Make sure prefix is correct here; 
 - C:\Users\<name>\.npmrc
 
+![image](https://user-images.githubusercontent.com/10468224/214755057-68319bbc-cac7-455e-af42-64a9b11cc332.png)
+
+
 
 ## Install Typescript:
 ------------------
