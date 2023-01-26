@@ -12,15 +12,16 @@
 - Make sure prefix is correct here; 
 - C:\Users\<name>\.npmrc
 
+
 ## Install Typescript:
 ------------------
-go to CMD of any directory where you want to store typescript.
-e.g; D:\Development\typescript-folder
-type; npm i typescript
-It will download typescript in the folder, now go to this folder e.g; 
-D:\Development\FrontEnd\typescript-4.9.4\node_modules\.bin
-Put above path in PATH of Environment Variables.
-Now check tsc -v from terminal, you should see version.
+- go to CMD of any directory where you want to store typescript.
+- e.g; D:\Development\typescript-folder
+- type; npm i typescript
+- It will download typescript in the folder, now go to this folder e.g; 
+- D:\Development\FrontEnd\typescript-4.9.4\node_modules\.bin
+- Put above path in PATH of Environment Variables.
+- Now check tsc -v from terminal, you should see version.
 
 
 ## Concepts/Points/Basics
