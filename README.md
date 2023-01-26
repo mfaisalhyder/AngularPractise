@@ -161,8 +161,8 @@ pnpm
 
 - Property Binding
     - It is to be used with a valid property of any valid HTML tag.
-    - box syntax [].
-    - <div [innerText]="hotelName"></div>
+    - box syntax []
+    - "<div [innerText]="hotelName"></div>"
 
 - Event Binding
     - To interact with end user like to save, submit, toggle, etc
