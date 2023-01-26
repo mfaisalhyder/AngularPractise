@@ -22,6 +22,14 @@
 - D:\Development\FrontEnd\typescript-4.9.4\node_modules\.bin
 - Put above path in PATH of Environment Variables.
 - Now check tsc -v from terminal, you should see version.
+![image](https://user-images.githubusercontent.com/10468224/214754865-93f13e58-5e82-4ac9-a929-39e6faa7bf06.png)
+
+
+## Install Angular:
+------------------
+- npm install @angular/cli
+- Make sure to check version using 'ng version' from cmd
+![image](https://user-images.githubusercontent.com/10468224/214754814-c9ba06f8-c1e0-45ca-b90c-d7f8c72749c1.png)
 
 
 ## Concepts/Points/Basics
