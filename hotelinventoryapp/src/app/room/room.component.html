@@ -41,22 +41,31 @@
     <table>
         <tr>
             <th>Index</th>
+            <th>Even/Odd</th>
             <th>Room Number</th>
             <th>Room Type</th>
             <th>Room Price</th>
             <th>Room Ameneties</th>
+            <th>Rating</th>
             <th>CheckIn Time</th>
             <th>CheckOut Time</th>
         </tr>
+        <!-- | slice: 0:2 -->
         <tr [ngClass]="e ? 'even' : 'odd'"  *ngFor="let roomObj of roomsList; let e=even; ; let o=odd, let i=index">
-            <td>{{i}}</td>
+            <td>{{i | percent}}</td>
             <td>{{e ? 'Even' : 'Odd'}}</td>
             <td>{{roomObj.roomNumber}}</td>
-            <td>{{roomObj.roomType}}</td>
-            <td>{{roomObj.price}}</td>
-            <td>{{roomObj.ameneties}}</td>
-            <td>{{roomObj.checkInTime}}</td>
-            <td>{{roomObj.checkOutTime}}</td>
+            <td>{{roomObj.roomType | uppercase}}</td>
+            <td>{{roomObj.price | currency: 'PKR '}}</td>
+            <td>{{roomObj.ameneties | titlecase}}</td>
+            <td>{{roomObj.rating | number}}</td>
+            <td>{{roomObj.checkInTime | date: 'dd/MMM/yyyy'}}</td>
+            <td>{{roomObj.checkOutTime | date: 'MMM/dd/yyyy'}}</td>
         </tr>
     </table>
 </div>
+
+<!-- Pipes -->
+<br />
+{{rooms | json}}
+

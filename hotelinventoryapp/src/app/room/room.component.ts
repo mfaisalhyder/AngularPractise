@@ -39,7 +39,8 @@ export class RoomComponent implements OnInit {
       price: 1000,
       photo: 'https://i.ebayimg.com/images/g/pacAAOSwMxlivIOt/s-l500.jpg',
       checkInTime: new Date('11-Nov-2022'),
-      checkOutTime: new Date('13-Nov-2022')
+      checkOutTime: new Date('13-Nov-2022'),
+      rating:4.4
     },
     {
       roomNumber: 2,
@@ -48,16 +49,19 @@ export class RoomComponent implements OnInit {
       price: 600,
       photo: 'https://i.ebayimg.com/images/g/pacAAOSwMxlivIOt/s-l500.jpg',
       checkInTime: new Date('11-Nov-2022'),
-      checkOutTime: new Date('13-Nov-2022')
+      checkOutTime: new Date('13-Nov-2022'),
+      rating:4.7
     },
     {
       roomNumber: 3,
       roomType: 'Deluxe Royal Room',
+      
       ameneties: 'Air Conditioner, Attached Bath, Balcony, Free Wifi, Food, Anything you order!',
       price: 1400,
       photo: 'https://i.ebayimg.com/images/g/pacAAOSwMxlivIOt/s-l500.jpg',
       checkInTime: new Date('15-Jan-2022'),
-      checkOutTime: new Date('20-Jan-2022')
+      checkOutTime: new Date('20-Jan-2022'),
+      rating:2.35446
     }
   ];
 
