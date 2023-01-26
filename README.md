@@ -81,15 +81,15 @@ pnpm
 
 
 ### To make a class property optional, put !
-- e.g: address!: string;
+	- e.g: address!: string;
 
 
 ### # or private keyword to declate state as private. Accessible only inside the class
-- e.g: #id: number;
+	- e.g: #id: number;
 
 
 ### To make an interface property optional, put ?
-- e,g: export interface User { id: number; age?: number; }
+	- e.g: export interface User { id: number; age?: number; }
 
 
 ### CS Modules: declare objects with export, so they can be used outside that class. where we need to use, we need to import.
@@ -156,16 +156,16 @@ pnpm
 
 ### Syntax Binding
 - Interpolation
-	- We can use Interpolation for basic Datatypes or even object
+    - We can use Interpolation for basic Datatypes or even object
     - <p> Welcome, to <b>{{hotelName}} </b> <br /> {{hotelAddress}}, {{hotelPostalCode}}</p>
 
 - Property Binding
-	- It is to be used with a valid property of any valid HTML tag.
-	- box syntax []
+    - It is to be used with a valid property of any valid HTML tag.
+    - box syntax []
     - <div [innerText]="hotelName"></div>
 
 - Event Binding
-	- To interact with end user like to save, submit, toggle, etc
+    - To interact with end user like to save, submit, toggle, etc
     - <button (click)="anyFunctionName()">I do magic!!</button>
 
 
