@@ -6,6 +6,7 @@
 https://nodejs.org/en/download/
 
 Go for LTS (Long Term Support)
+
 Select Windows Binary (.zip)
 UnZip in any directory, then set this directory in PATH of Environment Variables.
 
